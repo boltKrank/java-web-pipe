@@ -1,6 +1,10 @@
-plugins {
-    id 'war'
-    id 'org.akhikhl.gretty' version '1.4.2'
+apply plugin: 'war'
+apply from: 'gretty.plugin'
+
+gretty {
+    httpPort = 8080
+    contextPath = '/'
+    servletContainer = 'jetty9'
 }
 
 repositories {
