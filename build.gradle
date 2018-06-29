@@ -2,6 +2,8 @@ apply plugin: 'war'
 apply from: 'gretty.plugin'
 
 
+
+
 gretty {
     httpPort = 8080
     contextPath = '/'
